@@ -447,6 +447,36 @@ section{
   position:relative;
   overflow:hidden;
 }
+  /* ===== FIX TABLET & DESKTOP ===== */
+@media (min-width: 768px) {
+
+  section{
+    max-width: 100% !important;
+    aspect-ratio: auto !important;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  #cover{
+    max-width: 100% !important;
+    aspect-ratio: auto !important;
+    min-height: 100vh;
+    height: auto;
+  }
+  /* ===== LANDSCAPE 9:16 TANPA MERUSAK LAYOUT ===== */
+@media (orientation: landscape){
+
+  section,
+  #cover{
+    width: 65vh;
+    max-width: 420px;
+    height: 100%;
+    aspect-ratio: 9/16;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
 </style>
 </head>
 <body class="lock">
